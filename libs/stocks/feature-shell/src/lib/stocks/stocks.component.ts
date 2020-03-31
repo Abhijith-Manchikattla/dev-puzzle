@@ -9,8 +9,6 @@ import { PriceQueryFacade } from '@coding-challenge/stocks/data-access-price-que
 })
 export class StocksComponent implements OnInit {
   stockPickerForm: FormGroup;
-  symbol: string;
-  period: string;
 
   quotes$ = this.priceQuery.priceQueries$;
 
@@ -32,7 +30,9 @@ export class StocksComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.stockPickerForm.valueChanges.subscribe(this.fetchQuote.bind(this));
+  }
 
   fetchQuote() {
     if (this.stockPickerForm.valid) {
