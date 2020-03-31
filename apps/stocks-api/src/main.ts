@@ -30,7 +30,7 @@ const init = async () => {
     method: getChartData,
     options: {
       cache: {
-        expiresIn: 5 * 60 * 1000,
+        expiresIn: 30 * 60 * 1000,
         generateTimeout: 3000
       }
     }
