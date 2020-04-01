@@ -36,6 +36,7 @@
     "@angular/compiler": "^7.0.0",
     "@angular/core": "^7.0.0",
     "@angular/forms": "^7.0.0",
+    "@hapi/h2o2": "^8.3.0",
     "@angular/http": "^7.0.0",
     "@angular/material": "^7.3.7",
     "@angular/platform-browser": "^7.0.0",
